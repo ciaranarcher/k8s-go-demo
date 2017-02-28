@@ -8,7 +8,7 @@ import (
 )
 
 func movie(w http.ResponseWriter, r *http.Request) {
-	movie := "La La Land"
+	movie := "Moonlight"
 	t := time.Now()
 	fmt.Println(t.Format("20060102150405"), movie)
 	io.WriteString(w, movie)
